@@ -1,0 +1,18 @@
+Reason 1 -> For memory optimization.
+
+Explanation: When any value is referenced to string Class (say String s1 = "Abhishek"), Java creates object (value = "Abhishek") in string pool in heap memory.
+When new reference variable with same object value is created (say String s2 = "Abhishek"), Java will point s2 variable to the same object as s1 variable in string pool instead of creating new memory object in heap to save memory.
+
+NOTE: All wrapper classes (Integer, Double, Float etc) are Immutable.
+
+
+Reason 2. For Security and to avoid ambiguity.
+
+Assume String Class is mutable but follows same concepts as above. Now if reference s2 is changed then it will also affect s1, which may corrupt your program.
+
+
+Due to the above 2 primary reasons, String class is immutable.
+
+
+- Abhishek.
+
